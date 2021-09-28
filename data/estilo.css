@@ -1,0 +1,23 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    font-size: large;
+}
+header, main{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    font-size: large;
+}
+
+.ligar {
+    background-color: #008CBA;
+}
+
+.desligar{
+    background-color: #f44336;
+}
