@@ -7,7 +7,7 @@
 const char* ssid = "Fernando WiFi";
 const char* password = "fernando1610";
 
-const int ledPin = 1;
+const int ledPin = 0;
 
 String ledState;
 AsyncWebServer server(80);

@@ -3,11 +3,11 @@ const turnOFF = document.getElementById('turnOFF');
 const lamp = document.getElementById('lamp');
 
 function Lampada_Ligada(){
-    lamp.src = 'img/ligada.jpg'
+    lamp.src = 'img/ligada.png'
 }
 
 function Lampada_Desligada(){
-    lamp.src = 'img/desligada.jpg'
+    lamp.src = 'img/desligada.png'
 }
 
 
