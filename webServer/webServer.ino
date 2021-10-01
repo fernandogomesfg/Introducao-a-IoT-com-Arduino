@@ -16,9 +16,11 @@ String processor(const String& var){
   if(var == "resultado"){
     if(digitalRead(ledPin)){
       ledState = "Ligada";
+      digitalWrite(LED_BUILTIN, LOW); 
     }
     else{
       ledState = "Deslidaga";
+      digitalWrite(LED_BUILTIN, HIGH);
     }
     Serial.print(ledState);
     return ledState;
@@ -26,6 +28,7 @@ String processor(const String& var){
 }
  
 void setup(){
+  pinMode(LED_BUILTIN, OUTPUT);
   pinMode(ledPin, OUTPUT);
   if(!SPIFFS.begin()){
     return;
